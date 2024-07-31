@@ -1,0 +1,50 @@
+Approach
+1. Understanding Input and Output
+Input:
+Number of soldiers and their coordinates (x, y).
+Coordinates for the special castle (castleX, castleY).
+Output:
+Total number of unique paths and detailed steps taken (coordinates of soldiers killed).
+2. Data Structures
+2D Array: To store soldiers' coordinates.
+List of Lists: To store all unique paths found during the recursive search.
+List: To keep track of the current path during the recursive exploration.
+3. Algorithm Design
+Sorting Soldiers:
+The soldiers can be sorted based on their coordinates to simplify the search process, but sorting is not strictly necessary for generating paths.
+Recursive Backtracking:
+Use a recursive function to explore all permutations of soldiers.
+At each recursive step:
+Add the current soldier to the current path.
+Recursively call the function with the remaining soldiers.
+Backtrack by removing the last soldier added to the path when returning from recursion.
+Base Case:
+When there are no soldiers left to "kill," add the current path to the list of paths.
+Output Generation:
+After generating all paths, iterate through the list to print the results.
+4. Time Complexity
+The time complexity of this approach is O(n!), where n is the number of soldiers, due to generating all permutations.
+Implementation Steps
+Here’s the step-by-step implementation process based on the approach described:
+
+Read Input:
+
+Read the number of soldiers and their coordinates from the user.
+Read the coordinates of the castle.
+Initialize Variables:
+
+Create an array to hold soldiers' coordinates.
+Prepare a list to hold all unique paths.
+Implement the Recursive Function:
+
+The function will take the current state of soldiers, current coordinates of the path, and lists to track paths.
+Base case: If there are no soldiers left, save the current path.
+Loop through each soldier, add them to the path, and call the function recursively with the remaining soldiers.
+Output the Result:
+
+After all paths are generated, print the total count and details of each path.
+
+
+## Websites and Resources Used:
+https://www.geeksforgeeks.org/rat-in-a-maze/
+https://www.youtube.com/watch?v=7i41gZLXe5k&list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs&index=32

@@ -1,0 +1,20 @@
+## Approach to Apple Distribution Problem Using DSA in Java
+
+1. Problem Understanding
+The goal is to distribute weights of apples among three people (Ram, Sham, Rahim) based on predefined percentage shares
+ (50%, 30%, and 20% respectively).
+2. Input Handling
+Use a dynamic data structure (like an ArrayList) to store the weights of apples as they are entered by the user.
+3. Algorithm Design
+Sorting: Since the distribution should start with the heaviest apples, you will need to sort 
+the weights in descending order. This can be achieved using sorting algorithms such as QuickSort or MergeSort, or you can utilize the
+ built-in sorting method.
+Distribution Logic: Calculate the total weight and then determine the weight limits for each individual based on the given percentage shares.
+Greedy Distribution: Distribute the apples starting from the heaviest until each person reaches their respective weight limit.
+4. Data Structures Used
+ArrayList: To dynamically store the weights of apples.
+Arrays: To keep track of the allocated weights for Ram, Sham, and Rahim.
+Collections: Use Java Collections for sorting.
+
+## Websites and Resources Used:
+https://www.youtube.com/watch?v=wOaxJAtJ2Mo&list=PL-Jc9J83PIiHO9SQ6lxGuDsZNt2mkHEn0&index=21

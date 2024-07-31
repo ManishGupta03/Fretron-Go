@@ -1,0 +1,49 @@
+Problem-1: NoAccidentPlease;
+
+
+# Step to solve the problem
+----Input Collection:
+Prompt the user to enter the number of flights.
+For each flight, prompt the user to enter the number of coordinates and the coordinates themselves.//here scanner
+ user to read input from the user
+ Store the coordinates of each flight in a 2D array (one for each flight).
+ Represent Flight Paths:
+
+Store each flight's coordinates in a list.
+Convert these coordinates into line segments using the Line2D class from the Java 2D API.
+Use the Line2D.Double class to represent each segment of the flight path.
+Maintain a list of these line segments along with their corresponding flight indices.
+
+Check for Intersections:--->
+Use nested loops to compare each line segment with every other segment.
+Use the intersectsLine(Line2D line) method of Line2D to check if two segments intersect.
+Maintain a boolean array to track flights with intersections.
+
+Print non intersection paths: ->
+Iterate through the flights and print the coordinates of the flights that do not have intersecting paths.
+
+Iterate through all pairs of line segments to check for intersections.
+Track which flights have intersecting paths.
+
+Output Non-Intersecting Paths:
+Print the flight paths that do not intersect.
+
+
+## Websites and Resources Used:
+
+Here is some important websites to visit which will help you to integrate whole concept very easily
+Java 2D API Documentation: Documentation for the Line2D class and its methods.
+https://tutorialhorizon.com/algorithms/given-two-coordinates-print-the-line-equation/
+https://stackoverflow.com/questions/16333650/how-to-check-whether-2-lines-segments-intersect
+
+Java Scanner Documentation: Documentation for the Scanner class for reading input.
+ https://www.geeksforgeeks.org/given-a-set-of-line-segments-find-if-any-two-segments-intersect/
+
+
+
+
+
+
+
+
+
